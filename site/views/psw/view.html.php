@@ -9,7 +9,8 @@ class PswViewPsw extends JView
 {
 	function display($tpl = null)
 	{
-		$psw = "psw";
+		$model = &$this->getModel(); 
+		$greeting = $model->getGreeting();
 		$this->assignRef( 'psw', $psw );
 
 		parent::display($tpl);
