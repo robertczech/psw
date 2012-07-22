@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>psw</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>2007-02-22</creationDate>
+	<author>robert czech</author>
+	<authorEmail>robertczech@onet.eu</authorEmail>
+	<authorUrl></authorUrl>
+	<copyright></copyright>
+	<license>GNU</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>psw</description>
+
+	<!-- Site Main File Copy Section -->
+	<!-- Note the folder attribute: This attribute describes the folder
+      to copy FROM in the package to install therefore files copied
+      in this section are copied from /site/ in the package -->
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>psw.php</filename>
+		<filename>index.html</filename>
+		<filename>views/index.html</filename>
+		<filename>views/psw/index.html</filename>
+		<filename>views/psw/view.html.php</filename>
+		<filename>views/psw/tmpl/default.php</filename>
+		<filename>views/psw/tmpl/index.html</filename>
+	</files>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu>psw</menu>
+
+		<!-- Administration Main File Copy Section -->
+		<files folder="admin">
+			<filename>psw.php</filename>
+			<filename>index.html</filename>
+		</files>  
+	</administration>
+</install>
