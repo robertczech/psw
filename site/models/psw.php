@@ -7,8 +7,10 @@ jimport( 'joomla.application.component.model' );
 class PswModelPsw extends JModel
 {
 
-    function getGreeting()
+    function getPsw()
     {
-        return 'psw';
+        $query = "SELECT * FROM #__psw"; 
+        $dane = $this->_getList($query);   
+        return $dane;
     }
 }
