@@ -9,6 +9,7 @@ class PswViewPsw extends JView
 {
 	function display($tpl = null)
 	{
+		JToolBarHelper::save();
 		$model = $this->getModel(); 
 		$psw = $model->getPsw();
 		$this->assignRef( 'psw', $psw );

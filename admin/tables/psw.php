@@ -6,6 +6,6 @@ class TablePsw extends JTable
     function __construct(&$db) 
     { 
         parent::__construct( '#__psw', 'id', $db); 
-     }
+     }   
 }
 ?>
