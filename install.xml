@@ -21,6 +21,8 @@
 		<filename>controller.php</filename>
 		<filename>psw.php</filename>
 		<filename>index.html</filename>
+		<filename>models/psw.php</filename>
+		<filename>models/index.html</filename>
 		<filename>views/index.html</filename>
 		<filename>views/psw/index.html</filename>
 		<filename>views/psw/view.html.php</filename>
@@ -45,6 +47,19 @@
 		<files folder="admin">
 			<filename>psw.php</filename>
 			<filename>index.html</filename>
+			<filename>controller.php</filename>
+
+			<filename>models/psw.php</filename>
+			<filename>models/index.html</filename>
+			<filename>tables/psw.php</filename>
+
+			<filename>views/index.html</filename>
+			<filename>views/psw/index.html</filename>
+			<filename>views/psw/view.html.php</filename>
+			<filename>views/psw/tmpl/index.html</filename>
+			<filename>views/psw/tmpl/save.php</filename>
+			<filename>views/psw/tmpl/default.php</filename>
+
 			<filename>install.sql</filename>
 			<filename>uninstall.sql</filename>
 		</files>  
