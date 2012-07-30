@@ -1,9 +1,8 @@
 DROP TABLE IF EXISTS `#__psw`;
  
-CREATE TABLE `#__psw` (
+CREATE TABLE `#__wykladowca` (
   `id` int(11) NOT NULL auto_increment,
-  `psw` varchar(25) NOT NULL,
+  `immie` varchar(40) NOT NULL,
+  `nazwisko` varchar(40) NOT NULL,
   PRIMARY KEY (`id`)
 );
- 
-INSERT INTO `#__psw` (`psw`) VALUES ('psw 1'), ('psw 2'), ('psw 3');

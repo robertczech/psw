@@ -9,7 +9,7 @@ class PswModelPsw extends JModel
 
     function getPsw()
     {
-        $query = "SELECT * FROM #__psw"; 
+        $query = "SELECT * FROM #__wykladowca"; 
         $dane = $this->_getList($query);   
         return $dane;
     }

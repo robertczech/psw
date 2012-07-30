@@ -13,7 +13,7 @@ class PswController extends JController
 	}
 	function save()
 	{
-		$model = $this->getModel('psw');
+		$model = $this->getModel('wykladowca');
 
 		if ($model->store($post)) {
 			$msg = JText::_( 'Greeting Saved!' );
