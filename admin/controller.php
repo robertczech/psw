@@ -25,5 +25,11 @@ class PswController extends JController
 		$link = 'index.php?option=com_psw';
 		$this->setRedirect($link, $msg);
 	}
+	function add()
+	{
+		JRequest::setVar( 'view', 'psw' );
+		JRequest::setVar( 'layout', 'form'  );
+		parent::display();
+	}
 
 }
