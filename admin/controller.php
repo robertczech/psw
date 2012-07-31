@@ -28,7 +28,7 @@ class PswsController extends JController
 	function add()
 	{
 		JRequest::setVar( 'view', 'psw' );
-		JRequest::setVar( 'layout', 'form' ,'error');
+		JRequest::setVar( 'layout', 'form'  );
 		parent::display();
 	}
 

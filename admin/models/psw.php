@@ -4,7 +4,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
  
 jimport( 'joomla.application.component.model' );
 
-class PswsModelPsw extends PswModelWykladowca
+class PswsModelPsw extends JModel
 {
 
     function getPsw()

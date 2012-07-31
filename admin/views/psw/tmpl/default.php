@@ -32,7 +32,7 @@
 <div class="clr"></div>
 
 <input type="hidden" name="option" value="com_psw" />
-<input type="hidden" name="controller" value="psw" />
+<input type="hidden" name="controller" value="wykladowca" />
 <input type="hidden" name="task" value="save" />
 
 </form>
