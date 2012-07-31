@@ -5,7 +5,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 jimport('joomla.application.component.controller');
 
 
-class PswController extends JController
+class PswsController extends JController
 {
 	function display()
 	{
@@ -28,7 +28,7 @@ class PswController extends JController
 	function add()
 	{
 		JRequest::setVar( 'view', 'psw' );
-		JRequest::setVar( 'layout', 'form'  );
+		JRequest::setVar( 'layout', 'form' ,'error');
 		parent::display();
 	}
 

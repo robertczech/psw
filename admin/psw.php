@@ -25,7 +25,7 @@ if ($controller = JRequest::getWord('controller')) {
 }
 
 // Create the controller
-$classname	= 'PswController'.$controller;
+$classname	= 'PswsController'.$controller;
 $controller	= new $classname();
 
 // Perform the Request task
