@@ -5,7 +5,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 jimport('joomla.application.component.controller');
 
 
-class PswsController extends JController
+class PswController extends JController
 {
 	function display()
 	{
@@ -24,12 +24,6 @@ class PswsController extends JController
 		// Check the table in so it can be edited.... we are done with it anyway
 		$link = 'index.php?option=com_psw';
 		$this->setRedirect($link, $msg);
-	}
-	function add()
-	{
-		JRequest::setVar( 'view', 'psw' );
-		JRequest::setVar( 'layout', 'form'  );
-		parent::display();
 	}
 
 }

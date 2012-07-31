@@ -5,15 +5,17 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 jimport( 'joomla.application.component.view');
 
 
-class PswsViewPsw extends JView
+class PswViewPsw extends JView
 {
 	function display($tpl = null)
 	{
-
-		parent::display($tpl);
-	}
-	function form($tpl = null)
-	{
+		JToolBarHelper::title(   JText::_( 'PSW' ), 'psw.png' );
+		JToolBarHelper::deleteList();
+		JToolBarHelper::editListX();
+		JToolBarHelper::addNewX();
+		$model = $this->getModel(); 
+		$psw = $model->getPsw();
+		$this->assignRef( 'psw', $psw );
 		parent::display($tpl);
 	}
 }
